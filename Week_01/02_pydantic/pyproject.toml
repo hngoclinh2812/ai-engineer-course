@@ -1,0 +1,20 @@
+[project]
+name = "02-pydantic"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "ngoclinh2812", email = "hngoclinh2812@gmail.com" }
+]
+requires-python = ">=3.15"
+dependencies = [
+    "pydantic>=2.14.2",
+    "pytest>=9.2.0",
+]
+
+[project.scripts]
+02-pydantic = "02_pydantic:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
