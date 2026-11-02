@@ -1,4 +1,4 @@
-from pydantic import BaseModel, field_validator
+from pydantic import BaseModel, field_validator, Field
 
 ALLOWED_INDUSTRY = ["Công nghệ", "Tài chính", "Y tế", "Giáo dục"]
 
@@ -6,7 +6,7 @@ class BusinessProfile(BaseModel):
     ten: str
     nganh: str
     loai_hinh: str
-    von: float
+    von: float = Field(gt=0)
     dia_diem: str
 
     @field_validator("von")

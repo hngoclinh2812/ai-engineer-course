@@ -8,14 +8,18 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "pydantic" },
+]
+
+[package.dev-dependencies]
+dev = [
     { name = "pytest" },
 ]
 
 [package.metadata]
-requires-dist = [
-    { name = "pydantic", specifier = ">=2.14.2" },
-    { name = "pytest", specifier = ">=9.2.0" },
-]
+requires-dist = [{ name = "pydantic", specifier = ">=2.14.2" }]
+
+[package.metadata.requires-dev]
+dev = [{ name = "pytest", specifier = ">=9.2.0" }]
 
 [[package]]
 name = "annotated-types"

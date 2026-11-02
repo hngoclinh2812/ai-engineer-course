@@ -1,0 +1,19 @@
+[project]
+name = "03-async"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "ngoclinh2812", email = "hngoclinh2812@gmail.com" }
+]
+requires-python = ">=3.15"
+dependencies = [
+    "aiohttp>=3.14.5",
+]
+
+[project.scripts]
+03-async = "03_async:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
